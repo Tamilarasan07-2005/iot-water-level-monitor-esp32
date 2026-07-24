@@ -1,0 +1,27 @@
+.login-box{
+width:350px;
+margin:150px auto;
+padding:30px;
+background:white;
+text-align:center;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+.login-box input{
+display:block;
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+.login-box button{
+display:block;
+width:100%;
+padding:12px;
+margin-top:15px;
+background:#0077ff;
+color:white;
+border:none;
+border-radius:6px;
+}

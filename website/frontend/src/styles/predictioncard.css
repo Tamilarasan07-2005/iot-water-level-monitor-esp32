@@ -1,0 +1,80 @@
+.prediction-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  overflow: hidden;
+}
+
+.prediction-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.prediction-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.prediction-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.prediction-card-icon {
+  font-size: 24px;
+}
+
+.prediction-card-title {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.prediction-card-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: #667eea;
+  margin: 10px 0;
+}
+
+.prediction-card-trend {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.prediction-card-trend.up {
+  color: #28a745;
+}
+
+.prediction-card-trend.down {
+  color: #dc3545;
+}
+
+.prediction-card-trend.stable {
+  color: #ffc107;
+}
+
+.prediction-card-subtitle {
+  font-size: 12px;
+  color: #999;
+  margin-top: 8px;
+}

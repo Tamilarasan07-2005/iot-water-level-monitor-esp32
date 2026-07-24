@@ -1,0 +1,95 @@
+.water-tank {
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.tank-container {
+  position: relative;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tank-outline {
+  width: 200px;
+  height: 300px;
+  border: 4px solid #333;
+  border-radius: 10px;
+  position: relative;
+  background: #f0f0f0;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.water-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #0077ff 0%, #00aaff 100%);
+  transition: height 0.5s ease-in-out;
+  animation: wave 2s ease-in-out infinite;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+.water-wave {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: radial-gradient(circle, rgba(255,255,255,0.5) 10%, transparent 70%);
+  animation: ripple 1s linear infinite;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.level-markers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  font-size: 12px;
+  color: #666;
+  padding-left: 5px;
+}
+
+.marker {
+  position: relative;
+}
+
+.marker::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  width: 8px;
+  height: 1px;
+  background: #999;
+}
+
+.tank-base {
+  width: 220px;
+  height: 15px;
+  background: #555;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: -5px;
+}

@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+token.json
+credentials.json
+dhananjai.json
+website/backend/token.json
+website/backend/credentials.json
+website/backend/dhananjai.json
+website/backend/.env
+
+# Arduino / PlatformIO
+.pio/
+.vscode/
+*.bin
+*.elf
+*.hex
+build/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Vite / React build output
+website/frontend/dist/
+website/frontend/dist-ssr/
